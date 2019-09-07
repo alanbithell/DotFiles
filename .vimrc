@@ -25,4 +25,5 @@ set softtabstop=4
 set expandtab
 
 :imap jj <Esc>
-map <C-n> :NERDTreeFocus<CR>
+map <C-n> :NERDTreeToggle<CR>
+autocmd vimenter * NERDTree
