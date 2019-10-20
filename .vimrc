@@ -1,4 +1,3 @@
-
 set autoread
 " Auto-reload vimrc
 autocmd! bufwritepost vimrc source ~/.vimrc
@@ -109,6 +108,11 @@ set rtp+=~/.fzf
 map <C-F> <C-O>:Files<CR>
 nmap <C-F> :Files<CR>C
 
+" YouCompleteMe
+set complete=.,b,u,]
+set wildmode=longest,list:longest
+set completeopt=menu,preview
+let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 
 " vim-plug
 call plug#begin('~/.vim/plugged')
@@ -118,5 +122,6 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'kshenoy/vim-signature'
 Plug 'kana/vim-operator-user'
 Plug 'rhysd/vim-clang-format'
+Plug 'ycm-core/YouCompleteMe'
 
 call plug#end()
