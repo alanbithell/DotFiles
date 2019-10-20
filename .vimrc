@@ -59,7 +59,6 @@ set magic
 set foldcolumn=1
 set foldmethod=syntax
 set foldlevel=20
-set noswapfile
 
 " Clang Format
 let g:clang_format#style_options = {
@@ -87,8 +86,8 @@ nmap <Leader>C :ClangFormatAutoToggle<CR>
 map <C-a> :%s/\t/    /g<CR>
 
 " Directories for swp files
-" set backupdir=~/.vim/backup
-" set directory=~/.vim/backupf
+set backupdir=~/.vim/backup
+set directory=~/.vim/backupf
 
 " Nerdtree
 map <C-n> :NERDTreeToggle<CR>
